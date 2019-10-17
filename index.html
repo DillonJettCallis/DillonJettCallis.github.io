@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dillon's site</title>
+</head>
+<body>
+
+  <button onclick="generate()">Generate next</button>
+  Result: <span id="result"></span>
+
+  <script>
+    const raw = 'bdfghjklmnprstvwyz';
+
+    function generate() {
+      const result = window.document.getElementById('result');
+      result.textContent = raw[Math.floor(Math.random() * raw.length)];
+    }
+
+    generate();
+  </script>
+</body>
+</html>

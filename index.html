@@ -10,7 +10,10 @@
   Result: <span id="result"></span>
 
   <script>
-    const raw = 'bdfghjklmnprstvwyz😍';
+    const singles = 'bdfghjklmnprstvwyz';
+    const multi = ['😍', 'ch', 'sh', 'th'];
+    const raw = singles.split('');
+    raw.push(...multi);
 
     function generate() {
       const result = window.document.getElementById('result');

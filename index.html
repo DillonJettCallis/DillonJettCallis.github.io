@@ -10,14 +10,37 @@
   Result: <span id="result"></span>
 
   <script>
-    const singles = 'bdfghjklmnprstvwyz';
-    const multi = ['😍', 'ch', 'sh', 'th'];
-    const raw = singles.split('');
-    raw.push(...multi);
+    const words = [
+      'easygoing',
+      'friendly',
+      'hard working',
+      'attentive',
+      'independent',
+      'optimistic',
+      'reliable',
+      'trustworthy',
+      'caring',
+      'truthful',
+      'honest',
+      'flexible',
+      'talented',
+      'funny',
+      'creative',
+      'kind',
+      'encouraging',
+      'faithful',
+      'energetic',
+      'responsible',
+      'organized',
+      'imaginative',
+      'considerate',
+      'smart',
+      'awesome'
+    ]
 
     function generate() {
       const result = window.document.getElementById('result');
-      result.textContent = raw[Math.floor(Math.random() * raw.length)];
+      result.textContent = words[Math.floor(Math.random() * words.length)];
     }
 
     generate();
